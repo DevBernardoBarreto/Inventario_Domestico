@@ -44,6 +44,6 @@ Dashboard com gráficos
 
 👨‍💻 Autor
 
-Seu Nome: Bernardo Santana Barreto
+ Bernardo Santana Barreto
 [LinkedIn](https://www.linkedin.com/in/bernardo-barreto-aa1a20364/)
 
