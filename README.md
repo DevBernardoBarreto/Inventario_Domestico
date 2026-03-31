@@ -21,7 +21,7 @@ Interface gráfica simples e intuitiva
 Interface-----
 
 <p align="center">
-  <img src="interface.png" width="700"/>
+  <img src="interface_final.png" width="700"/>
 </p>
 
 
