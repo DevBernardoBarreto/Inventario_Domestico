@@ -80,3 +80,17 @@ Além do cadastro convencional de campos detalhados, o sistema conta com cálcul
 ---
 
 ## 📂 Estrutura do Projeto
+
+---
+
+## ✅ Melhorias seguras adicionadas nesta versão
+
+* Validação do campo **Valor da compra**, aceitando formato brasileiro como `1500,00`.
+* Correção para evitar erro quando o usuário cancela a escolha da imagem.
+* Correção no botão **Atualizar**, evitando travamento quando nenhum item está selecionado.
+* Confirmação antes de deletar um item.
+* Botão **Limpar** para limpar os campos da tela.
+* Campo **Buscar item** para filtrar os itens cadastrados.
+* Botão **Exportar CSV** para gerar relatório do inventário.
+* Correção nas funções de exclusão e consulta por ID no Supabase.
+* Arquivo `requirements.txt` em UTF-8 para facilitar a instalação das dependências.
