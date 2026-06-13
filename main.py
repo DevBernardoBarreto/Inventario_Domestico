@@ -13,6 +13,9 @@ from datetime import date
 # importando view--------------------------------------------------
 from view import *
 
+# Dolar (Importando a função do arquivo servicos.py)
+from servicos import obter_cotacao_dolar
+
 #cores---------------------------------------------------------------
 
 co0 = "#2e2d2b" #PRETA
@@ -315,10 +318,9 @@ b_item.place(x=360, y=221)
 
 #Labels Quantidade Total e Valores--------------------------------------------------
 
-# Valor total
-
-l_total_valor = Label(frameMeio, text='', width=14, height=2,
-                      anchor=CENTER, font=('Ivy 17 bold'), bg=co7, fg=co1)
+# Valor total (Ajustado tamanho da fonte e altura para suportar R$ e US$)
+l_total_valor = Label(frameMeio, text='', width=14, height=3,
+                      anchor=CENTER, font=('Ivy 13 bold'), bg=co7, fg=co1)
 l_total_valor.place(x=450, y=17)
 
 l_total_texto = Label(frameMeio, text='   Valor total de todos os itens  ',
@@ -331,7 +333,7 @@ l_qtd_valor = Label(frameMeio, text='', width=14, pady=5, height=2,
                     anchor=CENTER, font=('Ivy 17 bold'), bg=co7, fg=co1)
 l_qtd_valor.place(x=450, y=90)
 
-l_qtd_texto = Label(frameMeio, text='  Quantidade total de itens  ',
+l_qtd_texto = Label(frameMeio, text='   Quantidade total de itens  ',
                     height=1, anchor=NW, font=('Ivy 10 bold'), bg=co7, fg=co1)
 l_qtd_texto.place(x=450, y=92)
 
@@ -378,15 +380,28 @@ def mostrar():
     quantidade = []
 
     for iten in lista_itens:
-        quantidade.append(iten[6])
+        try:
+            # Garante a conversão correta de valores com casas decimais
+            quantidade.append(float(iten[6]))
+        except (ValueError, TypeError):
+            quantidade.append(0.0)
 
     Total_valor = sum(quantidade)
     Total_itens = len(quantidade)
 
-    l_total_valor['text'] = 'R$ {:,.2f}'.format(Total_valor)
+    # Consumindo a cotação em tempo real pela API
+    cotacao = obter_cotacao_dolar()
+    
+    if cotacao > 1.0:
+        Total_dolar = Total_valor / cotacao
+        # Mostra o valor total nas duas moedas
+        l_total_valor['text'] = 'R$ {:,.2f}\nUS$ {:,.2f}'.format(Total_valor, Total_dolar)
+    else:
+        # Fallback de segurança se estiver sem internet
+        l_total_valor['text'] = 'R$ {:,.2f}'.format(Total_valor)
+
     l_qtd_valor['text'] = Total_itens
 
 mostrar()
 
 janela.mainloop()
-
