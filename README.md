@@ -1,96 +1,44 @@
-# 📦 Inventário Doméstico
+# Olá! Eu sou o Fernando Henrique 👋
 
-[![GitHub release](https://img.shields.io/github/v/release/DevBernardoBarreto/Inventario_Domestico)](https://github.com/DevBernardoBarreto/Inventario_Domestico/releases/tag/v1.0.0)
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+Estudante de **Engenharia de Software** no CEUB (3.º semestre) e desenvolvedor web freelancer. Foco em construir soluções que resolvem problemas reais — do levantamento de requisitos ao deploy.
 
-O **Inventário Doméstico** é uma aplicação desktop desenvolvida em Python com interface gráfica (GUI) que permite registrar, visualizar e gerenciar seus bens pessoais de forma simples, organizada e com conversão de valores para Dólar em tempo real.
-
----
-
-## 🚀 Como Executar o Projeto (Do Jeito Rápido - Sem instalar Python)
-
-Se você deseja apenas testar ou utilizar o sistema sem precisar instalar o Python ou configurar códigos no seu computador, siga o passo a passo abaixo:
-
-### 1. Baixar o pacote estável
-Acesse a página de lançamentos e faça o download do arquivo compactado `.zip`:
-👉 **[Baixar Inventário Doméstico v1.0.0 (GitHub Releases)](https://github.com/DevBernardoBarreto/Inventario_Domestico/releases/tag/v1.0.0)**
-
-### 2. Extrair os arquivos
-Após concluir o download, extraia o conteúdo do arquivo `.zip` para uma pasta de sua preferência (ex: Área de Trabalho). 
-> ⚠️ **Importante:** Não execute o arquivo de dentro do arquivo zipado diretamente. É necessário extrair a pasta inteira para que o programa encontre o banco de dados e os ícones integrados.
-
-### 3. Rodar a aplicação
-1. Abra a pasta extraída.
-2. Dê um duplo clique no arquivo **`main.exe`** (ou `main`).
-3. Se o filtro *Windows SmartScreen* impedir a abertura inicial por ser um executável não assinado, basta clicar em **"Mais informações"** e depois em **"Executar assim mesmo"**.
+Atualmente buscando minha **primeira oportunidade de estágio** em desenvolvimento de software.
 
 ---
 
-## 💡 Problema Real
+### 🛠 Tecnologias & Ferramentas
 
-Muitas pessoas não possuem um controle estruturado de seus bens domésticos, como eletrônicos, móveis e objetos de valor. Isso pode gerar:
-* Perda de informações importantes (como datas de compra e números de série)
-* Dificuldade no controle financeiro geral
-* Problemas ou dores de cabeça em casos de mudanças ou acionamento de seguros
-* Falta de organização geral e controle do patrimônio pessoal
-
----
-
-## ✨ Solução Proposta
-
-A aplicação permite que o usuário registre seus itens com informações completas e visualize tudo em um único lugar estruturado. 
-
-Além do cadastro convencional de campos detalhados, o sistema conta com cálculos inteligentes e automatizados em tempo real:
-* 💰 **Valor Total dos Bens:** Soma instantânea de todos os itens cadastrados exibida em Reais (R$).
-* 💵 **Cotação e Conversão Dinâmica:** Integração ativa com API para converter dinamicamente o valor total acumulado para Dólares (USD).
-* 📦 **Quantidade Total de Itens:** Contagem automática do volume de itens sob sua gestão.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
 ---
 
-## 🎯 Público-Alvo
+### 🚀 Projetos em Destaque
 
-* Usuários domésticos e famílias em geral.
-* Pessoas que buscam organizar seus bens pessoais de forma digital.
-* Pessoas em fase de planejamento de mudança ou inventário de seguros.
-* Qualquer usuário focado em manter um controle financeiro e patrimonial básico.
-
----
-
-## ⚙️ Funcionalidades
-
-* **Cadastro de Itens:** Registro detalhado com Nome do item, Local (sala/área), Descrição, Marca/modelo, Data da compra, Valor, Número de série e imagem associada.
-* **Upload de Imagens:** Opção de carregar e visualizar fotos reais dos seus bens dentro do sistema.
-* **Edição de Informações:** Atualização rápida de qualquer dado dos itens salvos.
-* **Remoção de Registros:** Exclusão fácil de bens que foram vendidos ou descartados.
-* **Listagem Completa (Tabela):** Visualização geral de todos os bens cadastrados com busca dinâmica.
-* **Monitoramento de Cotação:** Conversão de valores integrada ao mercado de moedas.
+| Projeto | Descrição | Tecnologias |
+|---------|-----------|-------------|
+| [**PipoStudy**](https://github.com/fernandoscar/bootcamp-etapa-inicial) | App desktop de repetição espaçada com dark mode, integração com 6 APIs e CI/CD | Python, CustomTkinter, GitHub Actions |
+| [**Lavanderia Brasília**](https://github.com/fernandoscar/projetofinal) | Site institucional B2B para cliente real — do briefing ao deploy | HTML, CSS, JavaScript |
+| [**Sistema de Gestão**](https://github.com/fernandoscar/Projeto_java_universidade_1) | Sistema orientado a objetos com lógica de negócios e estrutura de dados | Java (POO) |
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+### 📊 GitHub Stats
 
-* **Python** (Linguagem base)
-* **Tkinter** (Interface Gráfica Nativa)
-* **SQLite** (Banco de dados local e leve)
-* **Pillow** (Processamento de imagem e ícones)
-* **tkcalendar** (Seletor visual de datas)
-* **Requests** (Consumo da API de Cotação de Moedas - AwesomeAPI)
-* **PyInstaller** (Empacotamento do executável final para Windows)
+<p>
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=fernandoscar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fernandoscar&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
 
 ---
 
-## 📂 Estrutura do Projeto
+### 📫 Contato
 
----
-
-## ✅ Melhorias seguras adicionadas nesta versão
-
-* Validação do campo **Valor da compra**, aceitando formato brasileiro como `1500,00`.
-* Correção para evitar erro quando o usuário cancela a escolha da imagem.
-* Correção no botão **Atualizar**, evitando travamento quando nenhum item está selecionado.
-* Confirmação antes de deletar um item.
-* Botão **Limpar** para limpar os campos da tela.
-* Campo **Buscar item** para filtrar os itens cadastrados.
-* Botão **Exportar CSV** para gerar relatório do inventário.
-* Correção nas funções de exclusão e consulta por ID no Supabase.
-* Arquivo `requirements.txt` em UTF-8 para facilitar a instalação das dependências.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fernando-henrique-silva-de-carvalho-07294b350/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:fernandofix11@gmail.com)
